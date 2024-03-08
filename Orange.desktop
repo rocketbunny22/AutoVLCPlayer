@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Orange
+Comment=Launch My Script
+Exec=/home/mthrift/AutoVLCorange.sh
+Icon=/path/to/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;
+

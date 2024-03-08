@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Yellow
+Comment=Launch My Script
+Exec=/home/mthrift/AutoVLCyellow.sh
+Icon=/path/to/icon.png
+Terminal=true
+Type=Application
+Categories=Utility;
+

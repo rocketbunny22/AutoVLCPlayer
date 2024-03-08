@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Pink
+Comment=Description of your script
+Exec=/home/mthrift/AutoVLCpink.sh
+Icon=/path/to/icon.png
+Terminal=true
+Type=Application

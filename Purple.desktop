@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Purple
+Comment=Launch My Script
+Exec=/home/mthrift/AutoVLCpurple.sh
+Icon=/path/to/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;
+
