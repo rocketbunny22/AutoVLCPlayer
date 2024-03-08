@@ -25,5 +25,5 @@ END_TIME="19:00"
     else
         echo "Current time is not within the specified range."
    fi
-fi
+
 
