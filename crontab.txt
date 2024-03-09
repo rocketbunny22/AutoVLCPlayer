@@ -1,0 +1,18 @@
+# Run Purple from Monday to Saturday, 8:30 AM t0 7:00 PM, every day
+30 8 * * 1-6 /home/mthrift/AutoVLCpurple.sh
+0 19 * * 1-6 pkill -f "/home/mthrift/AutoVLCpurple.sh" && pkill vlc
+
+# Run Orange from Monday to Saturday, 8:30 AM to 7:00 PM, every day
+30 8 * * 1-6 /home/mthrift/AutoVLCorange.sh
+0 19 * * 1-6 pkill -f "/home/mthrift/AutoVLCorange.sh" && pkill vlc
+
+# Run Yellow from Monday to Saturday, 8:30 AM to 7:00 PM, every day
+30 8 * * 1-6 /home/mthrift/AutoVLCyellow.sh
+0 19 * * 1-6 pkill -f "/home/mthrift/AutoVLCyellow.sh" && pkill vlc
+
+# Run Pink from Monday to Saturday, 8:30 AM to 7:00 PM, every day
+30 8 * * 1-6 /home/mthrift/AutoVLCpink.sh
+0 19 * * 1-6 pkill -f "/home/mthrift/AutoVLCpink.sh" && pkill vlc
+
+# After 4 weeks, loop back to Purple
+30 8 * * 1 [ $(date +\%d) -le 7 ] && /path/to/script1.sh
