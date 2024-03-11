@@ -15,14 +15,14 @@ def run_vlc_with_playlist(color):
     # Get the path to the playlist file for the specified color
     playlist_file = os.path.join(playlist_directories[color], f'{color}_playlist.m3u')
     # Execute VLC with the specified playlist
-    subprocess.run(['vlc', playlist_file])
+    subprocess.run(['vlc', playlist_file, '--fullscreen'])
 
 def main():
     while True:
         # Get the current week number
         current_week = datetime.datetime.now().isocalendar()[1]
         # Determine which color to use based on the current week
-        color_index = (current_week - 1) % len(playlist_directories)
+        color_index = (current_week - 11) % len(playlist_directories)
         color = list(playlist_directories.keys())[color_index]
         # Run VLC with the playlist for the determined color
         run_vlc_with_playlist(color)
