@@ -3,6 +3,7 @@ import datetime
 import time
 import os
 
+os.environ['DISPLAY'] = ':0'
 # Directory paths for color-specific playlists
 playlist_directories = {
     'orange': '/home/mthrift/playlists/orange',
